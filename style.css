@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;450;500;530;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+.bnr img {
+    filter: blur(.5); /* Standard */
+    -webkit-filter: blur(.5); /* WebKit */
+    -moz-filter: blur(.5); /* Mozilla */
+    -o-filter: blur(.5); /* Opera */
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+ 
+header {
+    background: rgb(19,5,46);
+background: linear-gradient(90deg, rgba(19,5,46,1) 0%, rgba(20,0,59,1) 10%, rgba(21,0,61,1) 50%, rgba(13,0,43,1) 68%, rgba(10,0,35,1) 88%, rgba(8,0,24,1) 96%,rgba(8,0,24,1) 100%);
+    /* background: rgb(255,0,61);
+    background: linear-gradient(90deg, rgba(255,0,61,1) 3%, rgba(115,0,255,1) 50%, rgba(255,0,78,1) 100%); */
+}
+  
+.ntext {
+    font-family: 'Cinzel Decorative';
+    font-weight: 550;
+    font-size: 1.67rem;
+}
+  
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+  
+.hero img {
+    width: 100%;  
+}
+ 
+.welc h1 {
+    color: #fff;
+    font-family: 'Cinzel Decorative';
+    font-weight: 550;
+    font-size: 3.4em;
+    transition: 0.3s;
+}
+.welc h2 {
+    color: #fff;
+    font-family: 'Cinzel Decorative';
+    font-weight: 550;
+    font-size: 3em;
+    transition: 0.3s;
+}
+  
+.welc h1:hover, .welc h2:hover {
+    -webkit-text-stroke: 2px #ffff;
+    color: transparent;
+    background-color: linear-gradient
+}  
+
+.welc ul{
+    padding-left: 0;
+}
+.welc ul li{
+    color: #fff;
+    width: 50px;
+    height: 0px;
+    border: none;
+    display: inline;
+    margin: 4px;
+}
+.welc a{
+    font-size: 24px; /* Adjust as needed */
+    text-decoration: none;
+}
+.welc a:hover li{
+    color: #000000;
+}
+
+#abtsec{
+    margin: 20px auto;
+}
+.abtimg{
+    margin-top: 2em;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 13px 0px #ff1d1d, 0px 0px 8px 3px rgb(35, 35, 255); */
+}
+.abt h1{
+    font-family: "DM Serif Display";
+    margin-top: 25px;
+    color: #fff;
+}
+.abt p{
+    font-family: "poppins";
+    font-size: 1.23em;
+    font-weight: 440;
+    color: #fff;
+}
+#skills{
+    text-align: center;
+    color: #fff;
+}
+#skills h1, #skills h2{
+    font-family: "DM Serif Display";
+    margin-top: 25px;
+}
+#skills ul{
+    padding : 10px;
+}
+
+@media (min-width: 768px) {
+    .welc h1{
+        display: none;
+      }
+    .welc h2{
+      font-size: 6em;
+    }
+}
+/* @media (max-width: 768px) { /* Applies to screens smaller than 768px (mobiles) *
+    .hero img{
+    
+    }
+} */
