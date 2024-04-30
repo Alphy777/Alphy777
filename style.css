@@ -23,8 +23,14 @@ header {
 background: linear-gradient(90deg, rgba(19,5,46,1) 0%, rgba(20,0,59,1) 10%, rgba(21,0,61,1) 50%, rgba(13,0,43,1) 68%, rgba(10,0,35,1) 88%, rgba(8,0,24,1) 96%,rgba(8,0,24,1) 100%);
     /* background: rgb(255,0,61);
     background: linear-gradient(90deg, rgba(255,0,61,1) 3%, rgba(115,0,255,1) 50%, rgba(255,0,78,1) 100%); */
+}  
+@media (min-width: 786px) {
+    .navbar{
+        position: relative;
+        display: contents;        
+    }
 }
-  
+
 .ntext {
     font-family: 'Cinzel Decorative';
     font-weight: 550;
@@ -78,23 +84,15 @@ background: linear-gradient(90deg, rgba(19,5,46,1) 0%, rgba(20,0,59,1) 10%, rgba
 .welc a:hover li{
     color: #000000;
 }
-
-#abtsec{
-    margin: 20px auto;
-}
-.abtimg{
-    margin-top: 2em;
-    border-radius: 20px;
-    /* box-shadow: 0px 0px 13px 0px #ff1d1d, 0px 0px 8px 3px rgb(35, 35, 255); */
-}
-.abt h1{
+.abt h2{
     font-family: "DM Serif Display";
     margin-top: 25px;
     color: #fff;
 }
 .abt p{
     font-family: "poppins";
-    font-size: 1.23em;
+    text-align: justify;
+    font-size: .999em;
     font-weight: 440;
     color: #fff;
 }
@@ -102,12 +100,36 @@ background: linear-gradient(90deg, rgba(19,5,46,1) 0%, rgba(20,0,59,1) 10%, rgba
     text-align: center;
     color: #fff;
 }
-#skills h1, #skills h2{
+h1,h2{
     font-family: "DM Serif Display";
     margin-top: 25px;
+    color: #fff;
 }
 #skills ul{
     padding : 10px;
+}
+#edu{
+    height: max-content;
+    color: #fefefe;
+}
+#abtsec .row ,#edu .row, #skills{
+margin: 40px auto 60px; 
+}
+#edu h1{
+    text-align: center;
+}
+#edu-left{
+    border-right: 2px solid white;
+    text-align: right;
+    padding-right: 1.5em;
+}
+.edu-2{
+    margin-top: 7em;
+    padding-left: 1.5em;
+}
+.edu-3{
+    margin-top: 7em;
+    padding-right: 1.5em;
 }
 
 @media (min-width: 768px) {
@@ -118,11 +140,7 @@ background: linear-gradient(90deg, rgba(19,5,46,1) 0%, rgba(20,0,59,1) 10%, rgba
       font-size: 6em;
     }
 }
-/* @media (max-width: 768px) { /* Applies to screens smaller than 768px (mobiles) *
-    .hero img{
-    
-    }
-} */
+
 
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -152,6 +170,7 @@ input[type="number"] {
 }
 .form-container h1{
     padding-top: 2em;
+    font-family: "DM Serif Display";
     color: #fff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap; /* Keeps the content on a single line */
