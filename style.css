@@ -93,6 +93,7 @@ background: linear-gradient(90deg, rgba(19,5,46,1) 0%, rgba(20,0,59,1) 10%, rgba
 #skills{
     text-align: center;
     color: #fff;
+    overflow: hidden;
 }
 h1,h2{
     font-family: "DM Serif Display";
