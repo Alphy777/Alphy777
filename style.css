@@ -137,12 +137,45 @@ margin: 40px auto 60px;
     line-height: 1.5em;
 }
 
+footer hr{
+    color: #fefefe;
+}
+
+.fttr ul{
+    padding-left: 0;
+}
+.fttr ul li{
+    color: #fff;
+    width: 50px;
+    height: 0px;
+    border: none;
+    display: inline;
+    margin: 4px;
+}
+.fttr a{
+    font-size: 19px;
+    text-decoration: none;
+}
+.fttr a li:hover{
+    color: gray;
+}
+.rights{
+    margin-top: 2.5em;
+}
+
 @media (min-width: 768px) {
     .welc h1{
         display: none;
       }
     .welc h2{
       font-size: 6em;
+    }
+    #achiv-left{
+        text-align: start;
+        text-decoration: none;
+    }
+    #achiv-right{
+        padding-left: 4.5em;
     }
 }
 /* Style for laptop screens */
@@ -190,7 +223,6 @@ input[type="number"] {
 }
 ::placeholder{
     color: #000000;
-    
 }
 .form-container h1{
     padding-top: 2em;
@@ -217,8 +249,8 @@ input[type="number"] {
     height: 2.5rem;
     border-radius: 10px;
     padding-left: 1.25rem;
+    background: rgba(255, 255, 255, 0.7);
     border: 1px solid grey;
-    background: rgba(255, 255, 255, 0.5);
     color: rgb(34, 33, 33);
     transition: .2s ease;
 
@@ -227,11 +259,11 @@ input[type="number"] {
     border: none;
 }
 .form-container textarea{
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     border: 1px solid grey;
     padding: 1rem 0 0 1rem ;
     color: rgb(34, 33, 33);
-    background: rgba(255, 255, 255, 0.5);
 }
 .form-container button{
     font-size: 15px;

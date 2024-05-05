@@ -11,6 +11,14 @@ $(document).ready(function() {
     });
   });
 
+  // Get Current Year
+function getCurrentYear() {
+  var d = new Date();
+  var year = d.getFullYear();
+  document.querySelector("#displayDateYear").innerText = year;
+}
+getCurrentYear()
+
   $(document).ready(function() {
 
     // Form validation with jQuery Validate plugin
