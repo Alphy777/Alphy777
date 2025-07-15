@@ -10,6 +10,7 @@
     <title>Alphy Jose</title>
     <link rel="icon" href="images/alphycircle.png">
 
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.29/build/spline-viewer.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -17,30 +18,31 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-transparent py-4" >
+    <nav class="navbar navbar-expand-md nav" >
       <div class="container">
-        <a class="navbar-brand ntext" href="#">Alphy Jose</a>
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
+        <a class="navbar-brand nav-text-color" href="#">Alphy Jose</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#abtsec_url">About</a>
+              <a class="nav-link nav-text-color" href="#abtsec_url">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#edu_url">Education</a>
+              <a class="nav-link nav-text-color" href="#edu_url">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills_url">Skills</a>
+              <a class="nav-link nav-text-color" href="#skills_url">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#achiv_url">Achievements</a>
+              <a class="nav-link nav-text-color" href="#achiv_url">Achievements</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link nav-text-color" href="#exp_url">Experiances</a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
+              <a class="nav-link nav-text-color" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -48,46 +50,37 @@
     </nav>
   </header>
   <section class="hero">
-    <div class="d-flex align-items-center bnr">
-      <picture>
-        <source media="(max-width: 767px)" srcset="images/BGprofileVer.jpg" type="image/jpeg">  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/BGprofile.jpg" type="image/jpeg">
-        <source media="(min-width: 1024px)" srcset="images/BGprofile.jpg" type="image/jpeg">
-        <img src="images/BGprofile.jpg" alt="Profile background image">  </picture>
-      <div class="row w-100 position-absolute gx-0 py-0">
-        <div class="col-12 text-center welc">
-          <h2 data-aos="flip-left" data-aos-duration="3000">
-            </>
-          </h2>
-          <h1 data-aos="flip-left" data-aos-duration="3000">
-            </>
-          </h1>
-          <ul data-aos="fade-up" data-aos-duration="3000">
+    <div class="banner">
+      <div data-aos="zoom-out-down" data-aos-duration="3000" class="banner-text">
+        <h1>bloom where you are planted</h1>          
+      </div><br>
+      <div data-aos="fade-up" data-aos-duration="3000" class="link-icons">
+        <ul>
+          <li>
             <a href="https://www.linkedin.com/in/alphyjose777/">
-              <li>
-                <i class="fa-brands fa-linkedin"></i>
-              </li>
+              <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="#" id="contact-link">
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-              </li>
+          </li>
+          <li>
+            <a href="mailto:alphyjose012@gmail.com" onclick="alert('Connecting To Mailing Application.')">
+              <i class="fa-solid fa-envelope"></i>
             </a>
+          </li>
+          <li>
             <a href="https://github.com/Alphy777">
-              <li>
-                <i class="fa-brands fa-github"></i>
-              </li>
+              <i class="fa-brands fa-github"></i>
             </a>
+          <li>
             <a href="https://www.instagram.com/jos.alphy/">
-              <li>
-                <i class="fa-brands fa-square-instagram"></i>
-              </li>
+              <i class="fa-brands fa-square-instagram"></i>
             </a>
-          </ul>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
-  </section><br><br>
-  <div id="abtsec_url"></div>
+  </section>
+   <!--About begins here-->
+  <div id="abtsec_url"></div> <!--don't remove did for better flow --> <br><br>
   <section id="abtsec" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="row">
@@ -97,25 +90,21 @@
         <div class="col-md-10">
           <div class="abt">
             <h2>About me...</h2>
-            <p>I am an ambitious and proactive pre-final year B.tech student
-              at Christ (Deemed To Be University) School of Engineering
-              and Technology. Possessing a robust academic background
-              and technical proficiency, I am driven to excel in various
-              professional capacities. I am a dedicated learner, consistently
-              seeking growth, and actively contribute to team objectives.
-              With unwavering dedication to excellence and a collaborative
-              mindset, I eagerly embrace the chance to utilize my skills and
-              expertise to produce outstanding outcomes within a dynamic
-              work setting.
+            <p>I am A Computer Science and Engineering graduate from Christ (Deemed To Be University), Bangalore with skills in Python, HTML, CSS, JavaScript, 
+              and Bootstrap. I'm passionate about leveraging technology to create effective solutions and am 
+              known for my analytical mindset, transparency, and collaborative spirit. Eager to contribute to 
+              a dynamic team and grow within the tech industry. 
             </p>
           </div>
         </div>
       </div>
     </div>
-  </section><br><br>
-  <!-- abt ends here -->
+  </section>
+  <!-- About ends here -->
 
-  <div id="edu_url"></div>
+  <!--Education begins here-->
+  <div id="edu_url"></div> <!--don't remove did for better flow -->
+  <br><br>
   <section id="edu">
     <div class="containder">
       <h1 data-aos="fade-up" data-aos-duration="1000">
@@ -124,19 +113,22 @@
       <div class="row">
         <div class="col-6" id="edu-left">
           <div class="edu-1" data-aos="fade-up" data-aos-duration="1000">
-            <h4>High School</h4>
+            <h4>2019</h4>
+            <h4>High School Education</h4>
             <h6>Holy Cross Higher Secondary School</h6>
             <h6>Score: 97%</h6>
           </div>
           <div class="edu-3" data-aos="fade-up" data-aos-duration="1000">
-            <h4>College</h4>
+            <h4>2025</h4>
+            <h4>College Education</h4>
             <h6>Christ (Deemed To Be University),Kengeri Campus</h6>
-            <h6>Aggregate: 61%</h6>
+            <h6>CGPA: 7.65/10</h6>
           </div>
         </div>
         <div class="col-6" id="edu-right">
           <div class="edu-2" data-aos="fade-up" data-aos-duration="1000">
-            <h4>Higher Secondary</h4>
+            <h4>2021</h4>
+            <h4>Higher Secondary Education</h4>
           <h6>Holy Cross Higher Secondary School</h6>
           <h6>Score: 92%</h6>
           </div>
@@ -144,8 +136,10 @@
       </div>
     </div>
   </section><br><br>
-  <!-- edu ends here -->
-  <div id="skills_url"></div>
+  <!-- Education ends here -->
+
+  <!--Skills begins here-->
+  <div id="skills_url"></div> <!--don't remove did for better flow -->
   <section id="skills">
     <div class="container">
       <h1 data-aos="fade-up" data-aos-duration="1000">
@@ -154,7 +148,7 @@
       <div class="row">
         <div class="col-md-6 hrdskl" data-aos="fade-up" data-aos-duration="1000">
           <h2 data-aos="flip-up" data-aos-duration="1000">
-            Hard Skills
+            Technical Skills
           </h2>
           <ul>
             <ul data-aos="fade-up-right" data-aos-duration="1000">
@@ -164,10 +158,10 @@
               <span style="color: blueviolet;"><i class="fa-brands fa-css3-alt"></i></span> CSS
             </ul>
             <ul data-aos="fade-up-right" data-aos-duration="1000">
-              <span style="color: blueviolet;"><i class="fa-brands fa-js"></i></span> JavaScript
+              <span style="color: blueviolet;"><i class="fa-solid fa-database"></i></span> SQL
             </ul>
             <ul data-aos="fade-up-right" data-aos-duration="1000">
-              <span style="color: blueviolet;"><i class="fa-solid fa-database"></i></span> Data Sturctures
+              <span style="color: blueviolet;"><i class="fa-brands fa-js"></i></span> JavaScript
             </ul>
             <ul data-aos="fade-up-right" data-aos-duration="1000">
               <span style="color: blueviolet;"><i class="fa-brands fa-python"></i></span> Python Programming
@@ -202,16 +196,17 @@
   </section><br>
   <!-- skills ends here -->
 
-  <div id="achiv_url"></div>
+  <!--Achivement begins here-->
+  <div id="achiv_url"></div> <!--don't remove did for better flow --> <br><br><br>
   <section id="achiv">
     <div class="container">
       <div class="row">
-        <div class="col-md-3" id="achiv-left">
+        <div id="achiv-title">
           <h2 data-aos="fade-up" data-aos-duration="1000">
             Certifications & Achievements
           </h2>
         </div>
-        <div class="col-md-9" id="achiv-right">
+        <div class="col-md-6" id="achiv-right">
           <ul>
             <li data-aos="fade-up" data-aos-duration="1000">
               Feb 2020 - Certification Black Belt 1st Dan (TBKA)
@@ -222,6 +217,10 @@
             <li data-aos="fade-up" data-aos-duration="1000">
               Jun 2023 - Certification in Data Science (IBM)
             </li>
+          </ul>
+        </div>
+        <div class="col-md-6" id="achiv-right">
+          <ul>
             <li data-aos="fade-up" data-aos-duration="1000">
               Aug 2023 - Domain Head(ACC, Christ University)
             </li>
@@ -231,18 +230,50 @@
             <li data-aos="fade-up" data-aos-duration="1000">
               Feb 2024 - Webmaster(IEEE VTS, Christ University)
             </li>
-            <li data-aos="fade-up" data-aos-duration="1000">
-              Jul 2024 - Certification for attending (Recorded) Webinar on
-              Artificial Intelligence and Health Care (Sanford University School
-              of Medicine)
-            </li>
           </ul>
         </div>
       </div>
     </div>
+    <br><br>
   </section>
-  <!-- achievements ends here -->
+  <!-- Achievements ends here -->
+  
+  <!-- Experiances section here -->
+   <!--div id="exp_url"></div> <!--don't remove did for better flow --> <br><br><br>
+  <!-- <section id="exp">
+    <div class="containder">
+      <h1 data-aos="fade-up" data-aos-duration="1000">
+        Experiances
+      </h1>
+      <div class="row">
+        <div class="col-6" id="edu-left">
+          <div class="edu-1" data-aos="fade-up" data-aos-duration="1000">
+            <h4>2019</h4>
+            <h4>High School Education</h4>
+            <h6>Holy Cross Higher Secondary School</h6>
+            <h6>Score: 97%</h6>
+          </div>
+          <div class="edu-3" data-aos="fade-up" data-aos-duration="1000">
+            <h4>2025</h4>
+            <h4>College Education</h4>
+            <h6>Christ (Deemed To Be University),Kengeri Campus</h6>
+            <h6>CGPA: 7.65/10</h6>
+          </div>
+        </div>
+        <div class="col-6" id="edu-right">
+          <div class="edu-2" data-aos="fade-up" data-aos-duration="1000">
+            <h4>2021</h4>
+            <h4>Higher Secondary Education</h4>
+          <h6>Holy Cross Higher Secondary School</h6>
+          <h6>Score: 92%</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br><br> -->
+  <!-- experiences section ends here -->
 
+  <!--contact session begins here-->
   <section id="contact">    
     <form action="" id="submit-form">
         <div class="form-container" data-aos="fade-up" data-aos-duration="10">
@@ -298,7 +329,7 @@
                 <i class="fa-brands fa-linkedin"></i>
               </li>
             </a>
-            <a href="https://www.instagram.com/_alp_hy_/">
+            <a href="https://www.instagram.com/jos.alphy/">
               <li>
                 <i class="fa-brands fa-square-instagram"></i>
               </li>

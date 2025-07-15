@@ -1,83 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;450;500;530;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
-.bnr img {
-    filter: blur(.5); /* Standard */
-    -webkit-filter: blur(.5); /* WebKit */
-    -moz-filter: blur(.5); /* Mozilla */
-    -o-filter: blur(.5); /* Opera */
-}
-  
+
 body {
     margin: 0;
     padding: 0;
     background-color: black;
+    font-family: 'Poppins';
 }
- 
-header {
-    background: rgb(19,5,46);
-background: linear-gradient(90deg, rgba(19,5,46,1) 0%, rgba(20,0,59,1) 10%, rgba(21,0,61,1) 50%, rgba(13,0,43,1) 68%, rgba(10,0,35,1) 88%, rgba(8,0,24,1) 96%,rgba(8,0,24,1) 100%);
-    /* background: rgb(255,0,61);
-    background: linear-gradient(90deg, rgba(255,0,61,1) 3%, rgba(115,0,255,1) 50%, rgba(255,0,78,1) 100%); */
+nav {
+    background: transparent;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.001),
+        rgba(255, 255, 255, 0.001)
+    );
+    backdrop-filter: blur(1rem);   
 } 
-  
-.ntext {
-    font-family: 'Cinzel Decorative';
-    font-weight: 550;
-    font-size: 1.67rem;
-}
-  
-.navbar-dark .navbar-toggler {
-    border: none;
-}
-  
-.hero img {
-    width: 100%;  
-}
- 
-.welc h1 {
-    color: #fff;
-    font-family: 'Cinzel Decorative';
-    font-weight: 550;
-    font-size: 3.4em;
-    transition: 0.3s;
-}
-.welc h2 {
-    color: #fff;
-    font-family: 'Cinzel Decorative';
-    font-weight: 550;
-    font-size: 3em;
-    transition: 0.3s;
-}
-  
-.welc h1:hover, .welc h2:hover {
-    -webkit-text-stroke: 2px #ffff;
-    color: transparent;
-    background-color: linear-gradient
-}  
 
-.welc ul{
-    padding-left: 0;
+.nav-text-color {
+    font-family: 'Poppins';
+    color: #ffffff;
+    padding: 10px 0;
+    cursor: pointer;
 }
-.welc ul li{
-    color: #fff;
-    width: 50px;
-    height: 0px;
+.nav-text-color:hover {
+    color: #ffffffa4;
+}
+  
+.navbar-toggler {
     border: none;
-    display: inline;
-    margin: 4px;
 }
-.welc a{
-    font-size: 24px; /* Adjust as needed */
+.banner{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -50px;
+    width: 100%;
+    height: 100vh;    
+}
+.banner-text{
+    color: #fefefe;
+    border: solid white 1px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    backdrop-filter: blur(.151rem);
+    padding: 20px;
+}
+.link-icons{
+    border: solid white 1px;
+    border-radius: 20px;
+    backdrop-filter: blur(.151rem);
+}
+.link-icons ul {
+    display: flex;
+    gap: 20px;
+    margin: 0 0!important;
+    padding: 20px!important;
+    list-style: none;
+}
+.link-icons li a{
+    color: white;
     text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
-.welc a:hover li{
-    color: #000000;
+
+.link-icons li a:hover {
+    
+    transform: scale(1.7); /* Slight zoom */
 }
+/* --- Specific Hover Styles for Each li --- */
+
+/* First li */
+.link-icons li:nth-child(1) a:hover {
+    color: #0826e4; /* Blue*/
+}
+
+/* Second li */
+.link-icons li:nth-child(2) a:hover {
+    color: #d77608; /* Brown */
+}
+
+/* Third li */
+.link-icons li:nth-child(3) a:hover {
+    color: #f7a52b; /* Orange */
+}
+
+/* Fourth li */
+.link-icons li:nth-child(4) a:hover {
+    color: #b631f3; /* Pink */
+}
+
 .abt h2{
     font-family: "DM Serif Display";
     margin-top: 25px;
@@ -95,22 +115,17 @@ background: linear-gradient(90deg, rgba(19,5,46,1) 0%, rgba(20,0,59,1) 10%, rgba
     color: #fff;
     overflow: hidden;
 }
-h1,h2{
-    font-family: "DM Serif Display";
-    margin-top: 25px;
-    color: #fff;
-}
 #skills ul{
     padding : 10px;
 }
-#edu{
+#edu , #exp{
     height: max-content;
     color: #fefefe;
 }
-#abtsec .row ,#edu .row, #skills{
+#abtsec .row ,#edu .row, #exp .row, #skills{
 margin: 40px auto 60px; 
 }
-#edu h1{
+#edu h1, #exp h1{
     text-align: center;
 }
 #edu-left{
@@ -126,15 +141,17 @@ margin: 40px auto 60px;
     margin-top: 7em;
     padding-right: 1.5em;
 }
-#achiv-left{
+#achiv-title{
     text-align: center;
-    text-decoration: underline white;
+    text-decoration: none;
+    color: white;
     margin-bottom: 2em;
 }
 
-#achiv ul li{
+#achiv ul li {
+    list-style-type: none;
     color: #fff;
-    line-height: 1.5em;
+    line-height: 2.5em;
 }
 
 footer hr{
@@ -163,54 +180,7 @@ footer hr{
     margin-top: 2.5em;
 }
 
-@media (min-width: 768px) {
-    .welc h1{
-        display: none;
-      }
-    .welc h2{
-      font-size: 6em;
-    }
-    #achiv-left{
-        text-align: start;
-        text-decoration: none;
-    }
-    #achiv-right{
-        padding-left: 4.5em;
-    }
-}
-/* Style for laptop screens */
-@media (min-width: 1024px) {
-    .navbar{
-        position: relative;
-        display: contents;
-    }
-    #achiv-left{
-        text-align: start;
-        text-decoration: none;
-    }
-    #achiv-right{
-        padding-left: 20.5em;
-    }
-    #achiv ul li{
-        color: #fff;
-        line-height: 3.5em;
-    }
-          
-}
 
-
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"] {
-    -webkit-appearance: none;
-}
-*{  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 .form-container{
     font-family: "Poppins";
     display: flex;
