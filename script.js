@@ -10,7 +10,6 @@ $(document).ready(function() {
       }
     });
   });
-
   // Get Current Year
 function getCurrentYear() {
   var d = new Date();

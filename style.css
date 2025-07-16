@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;450;500;530;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'); */
 
 
 body {
@@ -97,9 +97,22 @@ nav {
 .link-icons li:nth-child(4) a:hover {
     color: #b631f3; /* Pink */
 }
+.download-btn{
+    display: flex;
+    
+}
+.download-btn a{
+    padding-top: 10px;
+    color: #fefefe;
+    text-decoration: none;
+    font-size: larger;
+    cursor: pointer;
+}
+.download-btn a:hover{
+    text-shadow: #0826e4;
+}
 
 .abt h2{
-    font-family: "DM Serif Display";
     margin-top: 25px;
     color: #fff;
 }
@@ -196,13 +209,8 @@ footer hr{
 }
 .form-container h1{
     padding-top: 2em;
-    font-family: "DM Serif Display";
+    font-family: "Poppins";
     color: #fff;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .12em; /* Adjust as needed */
-    animation: typing 7.5s steps(40, end);
 }
 .form-container p{
     color: #fefefe;
@@ -219,21 +227,23 @@ footer hr{
     height: 2.5rem;
     border-radius: 10px;
     padding-left: 1.25rem;
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid grey;
-    color: rgb(34, 33, 33);
+    background: blueviolet;
+    border: 2px solid black;
+    color: Black;
     transition: .2s ease;
 
 }
-.form-container input:focus{
-    border: none;
+.form-container input::after{
+    border-color: #000000;
+    background: blueviolet;
 }
+
 .form-container textarea{
-    background: rgba(255, 255, 255, 0.7);
+    background: blueviolet;
     border-radius: 10px;
     border: 1px solid grey;
     padding: 1rem 0 0 1rem ;
-    color: rgb(34, 33, 33);
+    color: black;
 }
 .form-container button{
     font-size: 15px;
@@ -244,13 +254,14 @@ footer hr{
     border: none;
     border-radius: 30px;
     outline: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: blueviolet;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
 .form-container button:hover{
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+    background: black;
+    color: #fefefe;
+    box-shadow: 1px 1px 9px 1px blueviolet;
 }
 .cus{
     font-family: "Poppins"!important;
@@ -316,11 +327,6 @@ label {
     color: #fefefe;
     text-align: center;
     font-weight: 440;
-}
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
 }
 
 /* Loading Screen Animation */
