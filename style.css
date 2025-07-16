@@ -99,17 +99,24 @@ nav {
 }
 .download-btn{
     display: flex;
+    flex-direction: column;
+    color: white;
+    backdrop-filter: blur(.151rem);
     
 }
 .download-btn a{
-    padding-top: 10px;
     color: #fefefe;
     text-decoration: none;
     font-size: larger;
     cursor: pointer;
+    border: solid 1px white;
+    text-shadow: 0 0 15px #000000;
+    border-radius: 20px;
+    padding: 8px;
+    transition: .3s ease;
 }
 .download-btn a:hover{
-    text-shadow: #0826e4;
+    transform: scale(1.1);
 }
 
 .abt h2{
