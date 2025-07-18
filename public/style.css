@@ -32,7 +32,7 @@ nav {
     border: none;
 }
 .banner{
-    background-image: url(images/background.jpg);
+    background-image: url(images/hero_image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
