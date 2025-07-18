@@ -205,16 +205,16 @@ margin: 40px auto 60px;
     border-radius: 10px;
 }
 .cards-container .proj-cards:nth-child(1) .img-card{
-    background-image: url(images/portfolio.jpg);
+    background-image: url(images/personal_port.jpg);
 }
 .cards-container .proj-cards:nth-child(2) .img-card{
-    background-image: url(images/indbritz.jpg);
+    background-image: url(images/indbritz_cons.jpg);
 }
 .cards-container .proj-cards:nth-child(3) .img-card{
-    background-image: url(images/christnet.jpg);
+    background-image: url(images/christnet_acc.jpg);
 }
 .cards-container .proj-cards:nth-child(4) .img-card{
-    background-image: url(images/aeda.jpg);
+    background-image: url(images/Proxy.jpg);
 }
 .proj-details{
     color: #fefefe;
